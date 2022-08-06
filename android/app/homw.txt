@@ -1,0 +1,56 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:trainingtalenew/Screens/LoggedInWidget.dart';
+import 'package:trainingtalenew/Screens/SigninOpton/Signin.dart';
+
+class HomePage extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) => Scaffold(
+    body: StreamBuilder(
+      stream: FirebaseAuth.instance.authStateChanges(),
+      builder: (context,snapshot){
+        if(snapshot.connectionState == ConnectionState.waiting){
+          return Center(child: CircularProgressIndicator());
+        }else if(snapshot.hasData){
+          return LoggedInWidget();
+        }
+        else if(snapshot.hasError){
+          return Center(child: Text('Something went wrong!'));
+        }
+        else{
+          return SignIn();
+        }
+      },
+    ),
+
+  );
+}
+
+
+
+
+
+
+
+
+
+=============
+
+import 'package:flutter/material.dart';
+
+class LoggedInWidget extends StatefulWidget {
+
+  @override
+  _LoggedInWidgetState createState() => _LoggedInWidgetState();
+}
+
+class _LoggedInWidgetState extends State<LoggedInWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
+    );
+  }
+}
+

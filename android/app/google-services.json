@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "369174825890",
+    "project_id": "trainng-tale-lms",
+    "storage_bucket": "trainng-tale-lms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369174825890:android:193b784c6270f3b69f80fb",
+        "android_client_info": {
+          "package_name": "com.example.trainingtalenew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369174825890-6mmpski4nbo318kphlsu3qtc7gr621s7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trainingtalenew",
+            "certificate_hash": "997c26eb2648253d257f8a27ef072cda9e5baf17"
+          }
+        },
+        {
+          "client_id": "369174825890-skca7mhsdjmkvdsbapngocvondc1dkqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYPhXB80oI8iNDvMJ5gKwXSBR_kI7mZWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369174825890-skca7mhsdjmkvdsbapngocvondc1dkqe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "369174825890-bbd99lbhuc5u6ncviugvi218fk22k001.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.trainingtalenew"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
